@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SeQueL</title>
+    <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+    <script src="./resources/js/frontend.js"></script>
+    <script src="./resources/js/logic.js"></script>
+</head>
+<body>
+    <p id="date"></p>
+    <div id="welcome-box">
+        <h1 id="welcome-heading">Welcome to SeQueL</h1>
+    </div>
+    <div id="body-box">
+        <div id="information-box">
+            <div id="api-info">
+                <h3>API Keys</h3>
+                <label>Gemini API Key</label>
+                <div>
+                    <input id="gemini-api-key" type="password">
+                    <button id="gmni-api-key-button" onclick="hide_api_gemini_key()" type="password">Show</button>
+                </div>
+                <label>Langchain API Key</label>
+                <div>
+                    <input id="langchain-api-key" type="password">
+                    <button id="lngchn-api-key-button" onclick="hide_api_lngchn_key()" type="password">Show</button>
+                </div>
+            </div>
+            <div id="sql-info">
+                <h3>SQL Server Details</h3>
+                <div id="sql-form">
+                    <div id="sql-labels">
+                        <label>Username</label>
+                        <label>Password</label>
+                        <label>Host</label>
+                        <label>Port</label>
+                        <label>Database</label>
+                    </div>
+                    <div id="sql-inputs">
+                        <input id="sql-username">
+                        <div id="sql-pwd">
+                            <input id="sql-pwd-key" type="password">
+                            <button id="sql-pwd-button" onclick="hide_sql_pwd()" type="password">Show</button>
+                        </div>
+                        <input id="sql-host">
+                        <input id="sql-port">
+                        <input id="sql-database">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="gemini-box">
+            <h3>Gemini Answer</h3>
+            <div>
+                <label>Prompt</label>
+                <input id="prompt">
+            </div>
+            <button onclick="submit_prompt()">Submit</button>
+            <p id="llmresp">This is where the answer for your SQL question will go...</p>
+        </div>
+    </div>
+</body>
+</html>

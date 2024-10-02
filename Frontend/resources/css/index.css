@@ -1,0 +1,57 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#welcome-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid black;
+    #welcome-heading {
+        color: black;
+    }
+}
+
+#body-box {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    #information-box {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        #api-info {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        #sql-info {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        #sql-form {
+            display: flex;
+            gap: 5px;
+            #sql-labels {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            #sql-inputs {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                input {
+                    height: 12px;
+                }
+            }
+        }
+    }
+    #gemini-box {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
