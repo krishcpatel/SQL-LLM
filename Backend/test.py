@@ -1,13 +1,13 @@
 import os
 
 
-gmni_api_key = 'AIzaSyD6sktIyUrVgeVUXoMjLve5wJqZ0T8Nga0'
-lngchn_api_key = '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'
-username = 'sa'
-password = 'KP493159#c'
-host = 'localhost'
-port = '1433'
-database = 'StackOverflowMini'
+gmni_api_key = 'enter_key'
+lngchn_api_key = 'enter_key'
+username = 'enter_username'
+password = 'enter_pass'
+host = 'enter_host'
+port = 'enter_port'
+database = 'enter_database_name'
 
 os.environ["GOOGLE_API_KEY"] = gmni_api_key
 os.environ["LANGCHAIN_API_KEY"] = lngchn_api_key
